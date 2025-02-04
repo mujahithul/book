@@ -1,0 +1,180 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text for contrast */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 3rem;
+  color: #fff; /* White color for headings */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ccc; /* Lighter gray text */
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Available Cars List */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  background-color: #1f1f1f; /* Dark gray card */
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+li h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+li p {
+  font-size: 1rem;
+  color: #bbb; /* Light gray text */
+}
+
+button {
+  background-color: #333; /* Dark button background */
+  color: #fff;
+  border: 2px solid #333;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555; /* Lighter dark button */
+  border-color: #555;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Booking Form */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ddd; /* Slightly lighter text for labels */
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #444; /* Darker borders */
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #222; /* Dark background for inputs */
+  color: #fff; /* White text inside inputs */
+}
+
+input:focus,
+select:focus {
+  border-color: #4CAF50; /* Focus border color */
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green submit button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #333;
+  color: #bbb;
+  width: 100%;
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #4CAF50; /* Green link hover */
+  text-decoration: underline;
+}

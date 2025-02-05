@@ -1,18 +1,18 @@
-// src/components/HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./HomePage.css"; // Import CSS
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="home-container">
       <h1>Welcome to Car Booking</h1>
       <h2>Available Cars</h2>
-      <ul>
+      <ul className="car-list">
         <li>
-          <Link to="/car/1">EECO</Link> {/* Link to car details with ID 1 */}
+          <Link to="/car/1" className="car-link">EECO</Link> {/* Styled Link */}
         </li>
         <li>
-          <Link to="/car/2">SWIFT</Link> {/* Link to car details with ID 2 */}
+          <Link to="/car/2" className="car-link">SWIFT</Link> {/* Styled Link */}
         </li>
       </ul>
     </div>

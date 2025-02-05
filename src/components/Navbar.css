@@ -1,0 +1,30 @@
+/* Navbar Links */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem; /* Bigger font size */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    color: #ffffff; /* Green text */
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+    background-color: #fbfffb; /* Green background on hover */
+    transform: scale(1.1);
+  }
+  

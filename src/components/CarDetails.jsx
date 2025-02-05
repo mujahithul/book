@@ -1,5 +1,5 @@
-// src/components/CarDetails.js (temporary testing code)
 import React from 'react';
+import "./CarDetails.css";
 
 const CarDetails = ({ id }) => {
   const carData = {
@@ -14,10 +14,11 @@ const CarDetails = ({ id }) => {
   }
 
   return (
-    <div>
+    <div className="car-container">
       <h2>{car.name}</h2>
       <p>Price: ${car.price}</p>
       <p>Description: {car.description}</p>
+      <button className="car-button">Book {car.name}</button> {/* Styled Button */}
     </div>
   );
 };
